@@ -10,9 +10,13 @@ while (time.time() - start) < 60:
         ch = input('要增加分数么？输入 Y 增加，否则减少\n')
         if (ch == 'Y'):
             points += 1
+        else:
+            points -= 1
     else:
         ch = input('要增加分数么？输入 Y 减少，否则增加\n')
         if (ch == 'Y'):
             points -= 1
+        else:
+            points += 1
 
 print(f'游戏结束！你的最终分数为{points}！')
